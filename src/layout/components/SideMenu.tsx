@@ -12,6 +12,7 @@ function SideMenu(): JSX.Element {
 
   const [selectedKeys, setSelectedKeys] = useState<string[]>([]);
 
+  // Get menu items.
   const menuItems: MenuItem[] = [];
   routes[0].children?.forEach((item) => {
     if (!item?.meta?.hidden) {
@@ -24,10 +25,10 @@ function SideMenu(): JSX.Element {
   });
 
   const onClick: MenuProps['onClick'] = (e) => {
-    console.log(e);
     navigate(e.key);
   };
 
+  // Listen the change of router
   useEffect(() => {
     console.log(location);
     setSelectedKeys([location.pathname]);
