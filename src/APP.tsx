@@ -1,12 +1,8 @@
-import routes from './routers';
+import routes from '@renderer/routers';
+import { useRoutes } from 'react-router-dom';
 
 function App(): JSX.Element {
-  return (
-    <>
-      <h1>Hello, World</h1>
-      {routes}
-    </>
-  );
+  return <>{useRoutes(routes)}</>;
 }
 
 export default App;
