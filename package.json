@@ -17,6 +17,9 @@
     "build:mac": "electron-vite build && electron-builder --mac --config",
     "build:linux": "electron-vite build && electron-builder --linux --config"
   },
+  "resolutions": {
+    "styled-components": "^5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vkm0303/electron-template-react.git"
@@ -63,6 +66,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
+    "styled-components": "^5.3.8",
     "typescript": "^4.9.5",
     "vite": "^4.1.4"
   },
