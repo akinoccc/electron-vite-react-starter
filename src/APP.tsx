@@ -1,8 +1,8 @@
 import routes from '@renderer/routers';
-import { useRoutes } from 'react-router-dom';
+import { RouteObject, useRoutes } from 'react-router-dom';
 
 function App(): JSX.Element {
-  return <>{useRoutes(routes)}</>;
+  return <>{useRoutes(routes as RouteObject[])}</>;
 }
 
 export default App;
