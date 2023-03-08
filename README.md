@@ -1,6 +1,6 @@
 # 🌈Electron-react-starter
 
-<img src="./public/shot.png" />
+<img style="width: 100%;" src="./public/shot.png" />
 
 ## 🚀Feature
 
