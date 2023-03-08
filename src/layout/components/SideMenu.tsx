@@ -20,6 +20,7 @@ function SideMenu(): JSX.Element {
         label: item.meta?.name,
         key: item.path,
         icon: item.meta?.icon,
+        title: '',
       } as MenuItem);
     }
   });
@@ -30,15 +31,13 @@ function SideMenu(): JSX.Element {
 
   // Listen the change of router
   useEffect(() => {
-    console.log(location);
     setSelectedKeys([location.pathname]);
   }, [location]);
 
   return (
     <Menu
       onClick={onClick}
-      style={{ width: 150 }}
-      mode="inline"
+      mode="vertical"
       selectedKeys={selectedKeys}
       items={menuItems}
     />

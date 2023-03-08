@@ -1,15 +1,18 @@
 import SideMenu from './components/SideMenu';
 import { Layout } from 'antd';
 import { Outlet } from 'react-router-dom';
-import Sider from 'antd/es/layout/Sider';
+
+const { Content, Sider } = Layout;
 
 function AppLayout(): JSX.Element {
   return (
-    <Layout style={{ padding: 0 }}>
-      <Sider style={{ minHeight: '100vh' }} collapsible theme="light">
+    <Layout style={{ minHeight: '100vh' }}>
+      <Sider collapsible theme="light">
         <SideMenu />
       </Sider>
-      <Outlet />
+      <Content style={{ padding: '20px' }}>
+        <Outlet />
+      </Content>
     </Layout>
   );
 }
