@@ -4,14 +4,14 @@
 
 - Develop by react and built by electron-vite.
 - Format code style by prettier and eslint.
-- configured electron-builder and husky and commitlint.
+- Configured electron-builder and husky and commitlint.
 
 ## 📖Usage
 
 ### Dev
 
 ```shell
-# Install dep
+# Install
 yarn
 ```
 
