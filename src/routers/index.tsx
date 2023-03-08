@@ -24,30 +24,23 @@ interface RouteObject {
   };
 }
 
-const AppLayout = lazy(() => import('@renderer/layout/AppLayout'));
 const Home = lazy(() => import('@renderer/pages/Home/Home'));
 
 const routes: RouteObject[] = [
   {
-    path: '/',
-    element: <AppLayout />,
-    children: [
-      {
-        index: true,
-        element: <Navigate replace to="/home" />,
-        meta: {
-          hidden: true,
-        },
-      },
-      {
-        path: '/home',
-        element: <Home />,
-        meta: {
-          name: 'Home',
-          icon: <BankOutlined />,
-        },
-      },
-    ],
+    index: true,
+    element: <Navigate replace to="/home" />,
+    meta: {
+      hidden: true,
+    },
+  },
+  {
+    path: '/home',
+    element: <Home />,
+    meta: {
+      name: 'Home',
+      icon: <BankOutlined />,
+    },
   },
 ];
 

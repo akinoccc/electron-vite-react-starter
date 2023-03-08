@@ -14,7 +14,7 @@ function SideMenu(): JSX.Element {
 
   // Get menu items.
   const menuItems: MenuItem[] = [];
-  routes[0].children?.forEach((item) => {
+  routes?.forEach((item) => {
     if (!item?.meta?.hidden) {
       menuItems.push({
         label: item.meta?.name,
