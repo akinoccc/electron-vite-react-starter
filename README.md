@@ -1,5 +1,7 @@
 # 🌈Electron-react-starter
 
+<img src="./public/shot.png" />
+
 ## 🚀Feature
 
 - Develop by react and built by electron-vite.
