@@ -35,7 +35,7 @@ module.exports = {
       'error',
       { allow: ['arrowFunctions'] },
     ],
-    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     'prettier/prettier': 'error',
