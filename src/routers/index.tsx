@@ -4,7 +4,8 @@ import {
   Navigate,
   ShouldRevalidateFunction,
 } from 'react-router-dom';
-import AppLayout from '@renderer/layout/AppLayout';
+import { BankOutlined } from '@ant-design/icons';
+import { lazy } from 'react';
 interface RouteObject {
   path?: string;
   index?: boolean;
@@ -23,6 +24,9 @@ interface RouteObject {
   };
 }
 
+const AppLayout = lazy(() => import('@renderer/layout/AppLayout'));
+const Home = lazy(() => import('@renderer/pages/Home/Home'));
+
 const routes: RouteObject[] = [
   {
     path: '/',
@@ -37,9 +41,10 @@ const routes: RouteObject[] = [
       },
       {
         path: '/home',
-        element: <h1>A react template for electron</h1>,
+        element: <Home />,
         meta: {
           name: 'Home',
+          icon: <BankOutlined />,
         },
       },
     ],
