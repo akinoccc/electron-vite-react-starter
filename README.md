@@ -8,7 +8,7 @@
 
 ## 📖Usage
 
-### 🚧Dev
+### Dev
 
 ```shell
 # Install dep
@@ -20,7 +20,8 @@ yarn
 yarn dev
 ```
 
-### 🧱Package
+### Package
+
 ```shell
 # Platform: win | mac | linux
 yarn build:[platform]
