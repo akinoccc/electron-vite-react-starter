@@ -21,7 +21,7 @@ yarn dev
 ```
 
 ### 🧱Package
-# Platform: win | mac | linux
 ```shell
+# Platform: win | mac | linux
 yarn build:[platform]
 ```
