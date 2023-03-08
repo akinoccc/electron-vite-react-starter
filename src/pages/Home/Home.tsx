@@ -12,7 +12,7 @@ const Ul = styled.ul`
 
 const Div = styled.div`
   display: flex;
-  align-item: center;
+  align-items: center;
 `;
 
 const CodeBlock = styled.pre`

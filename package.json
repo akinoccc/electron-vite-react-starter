@@ -1,6 +1,6 @@
 {
-  "name": "electron-template-react",
-  "productName": "Electon Template For React",
+  "name": "electron-react-starter",
+  "productName": "Electon-React Starter",
   "version": "0.0.1",
   "description": "A react template of electron project.",
   "main": "./out/main/index.js",
