@@ -9,6 +9,9 @@ import renderer from 'vite-plugin-electron-renderer';
 export default defineConfig(({ command }) => {
   const sourcemap = command === 'serve' || !!process.env.VSCODE_DEBUG;
   return {
+    build: {
+      outDir: 'dist-electron/renderer',
+    },
     resolve: {
       alias: {
         '@renderer': resolve(__dirname, 'src'),

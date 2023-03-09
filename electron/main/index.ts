@@ -3,7 +3,7 @@ import { join } from 'path';
 import { electronApp, optimizer, is } from '@electron-toolkit/utils';
 
 process.env.DIST_ELECTRON = join(__dirname, '../');
-process.env.DIST = join(process.env.DIST_ELECTRON, '../dist');
+process.env.DIST = join(process.env.DIST_ELECTRON, '../dist-electron/renderer');
 process.env.PUBLIC = process.env.VITE_DEV_SERVER_URL
   ? join(process.env.DIST_ELECTRON, '../public')
   : process.env.DIST;
@@ -11,7 +11,6 @@ process.env.PUBLIC = process.env.VITE_DEV_SERVER_URL
 const preload = join(__dirname, '../preload/index.js');
 const url = process.env.VITE_DEV_SERVER_URL;
 const indexHtml = join(process.env.DIST, 'index.html');
-
 function createWindow(): void {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
