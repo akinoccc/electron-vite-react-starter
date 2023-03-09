@@ -3,15 +3,15 @@ productName: electron-app
 directories:
   buildResources: build
 files:
-  # - out
-  # - dist
+  - dist-electron
+  - dist
   # - build
-  - '!**/.vscode/*'
-  - '!electron/*'
-  - '!src/*'
-  - '!electron.vite.config.{js,ts,mjs,cjs}'
-  - '!{index.html,.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
-  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  # - '!**/.vscode/*'
+  # - '!electron/*'
+  # - '!src/*'
+  # - '!electron.vite.config.{js,ts,mjs,cjs}'
+  # - '!{index.html,.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  # - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
 asarUnpack:
   - resources/*
 afterSign: build/notarize.js

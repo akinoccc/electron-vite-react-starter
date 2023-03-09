@@ -3,19 +3,17 @@
   "productName": "Electon-React Starter",
   "version": "0.0.1",
   "description": "A react template of electron project.",
-  "main": "./out/main/index.js",
+  "main": "dist-electron/main/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "lint-staged": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "prepare": "husky install",
-    "start": "electron-vite preview",
-    "dev": "electron-vite dev --watch",
-    "build": "electron-vite build",
-    "build:win": "npm run build && electron-builder --win --config",
-    "build:mac": "electron-vite build && electron-builder --mac --config",
-    "build:linux": "electron-vite build && electron-builder --linux --config"
+    "start": "vite preview",
+    "dev": "vite --mode dev",
+    "build:dev": "tsc && vite build --mode dev && electron-builder --config",
+    "build:prod": "tsc && vite build --mode prod && electron-builder --config"
   },
   "resolutions": {
     "styled-components": "^5"
@@ -51,7 +49,6 @@
     "electron": "^23.1.2",
     "electron-builder": "^23.6.0",
     "electron-devtools-installer": "^3.2.0",
-    "electron-vite": "^1.0.19",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
@@ -76,6 +73,9 @@
     "@electron-toolkit/preload": "^1.0.3",
     "@electron-toolkit/utils": "^1.0.2",
     "antd": "^5.3.0",
-    "electron-store": "^8.1.0"
+    "electron-store": "^8.1.0",
+    "vite-electron-plugin": "^0.8.2",
+    "vite-plugin-electron-renderer": "^0.12.1",
+    "vite-plugin-svgr": "^2.4.0"
   }
 }
