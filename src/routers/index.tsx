@@ -4,7 +4,7 @@ import {
   Navigate,
   ShouldRevalidateFunction,
 } from 'react-router-dom';
-import { BankOutlined } from '@ant-design/icons';
+import { ReadOutlined } from '@ant-design/icons';
 import { lazy } from 'react';
 interface RouteObject {
   path?: string;
@@ -24,22 +24,22 @@ interface RouteObject {
   };
 }
 
-const Home = lazy(() => import('@renderer/pages/Home/Home'));
+const README = lazy(() => import('@renderer/pages/README'));
 
 const routes: RouteObject[] = [
   {
     index: true,
-    element: <Navigate replace to="/home" />,
+    element: <Navigate replace to="/readme" />,
     meta: {
       hidden: true,
     },
   },
   {
-    path: '/home',
-    element: <Home />,
+    path: '/readme',
+    element: <README />,
     meta: {
-      name: 'Home',
-      icon: <BankOutlined />,
+      name: 'README',
+      icon: <ReadOutlined />,
     },
   },
 ];

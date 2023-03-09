@@ -35,10 +35,10 @@ function Home(): JSX.Element {
           </Div>
           <Div>
             <Avatar
-              src={<img src="electron-vite-logo.svg" alt="avatar" />}
+              src={<img src="vite-logo.svg" alt="avatar" />}
               size="small"
             />
-            <Text strong>Electron-vite</Text>
+            <Text strong>Vite</Text>
           </Div>
           <Div>
             <Avatar
@@ -53,7 +53,7 @@ function Home(): JSX.Element {
       <Title level={2}>🚀Feature</Title>
       <Paragraph>
         <Ul>
-          <li>Develop by react and built by electron-vite.</li>
+          <li>Develop by react and build by vite.</li>
           <li>Format code style by prettier and eslint.</li>
           <li>Configured electron-builder and husky and commitlint.</li>
         </Ul>

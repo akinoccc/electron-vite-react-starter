@@ -25,6 +25,6 @@ yarn dev
 ### Package
 
 ```shell
-# Platform: win | mac | linux
-yarn build:[platform]
+# ENV: dev | prod
+yarn build:[ENV]
 ```
