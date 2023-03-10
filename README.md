@@ -4,7 +4,7 @@
 
 ## 🚀Feature
 
-- Develop by react and built by electron-vite.
+- Develop by react and built by vite.
 - Format code style by prettier and eslint.
 - Configured electron-builder and husky and commitlint.
 
